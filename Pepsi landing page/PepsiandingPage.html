@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pepsi Website Landing Page</title>
+	<link rel="stylesheet" href="/home/nirrr/Documents/Web Developer/Pepsi landing page/pepsi.css">
+	</head>
+	<body>
+	<section class="sec">
+		<header>
+			<a href="#"><img src="/home/nirrr/Documents/Web Developer/Pepsi landing page/images/logo.png" class="logo"></a>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">What's New</a></li>
+				<li><a href="#">NewsLetter</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</header>
+		<div class="content">
+		<div class="textBox">
+		<h2><span>Thats what<br>
+		I Like</span></h2>
+		<p>"Pepsi... The Choice of a New Generation"<br>"Change The Game"<br> </p>
+		<a href="#">View all products</a>
+		</div>
+		<div class="imgbox">
+			<img src="/home/nirrr/Documents/Web Developer/Pepsi landing page/images/pepsi001.png" class = "pepsi">
+		</div>
+		</div>
+		<ul class="thumb">
+		<li><img src="/home/nirrr/Documents/Web Developer/Pepsi landing page/images/pepsi001.png" onclick="imgSlider('/home/nirrr/Documents/Web Developer/Pepsi landing page/images/pepsi001.png');changeBgColor('#0062be')"></li>
+		<li><img src="/home/nirrr/Documents/Web Developer/Pepsi landing page/images/pepsi002.png" onclick="imgSlider('/home/nirrr/Documents/Web Developer/Pepsi landing page/images/pepsi002.png');changeBgColor('#e60c2c')""></li>
+		<li><img src="/home/nirrr/Documents/Web Developer/Pepsi landing page/images/pepsi003.png" onclick="imgSlider('/home/nirrr/Documents/Web Developer/Pepsi landing page/images/pepsi003.png');changeBgColor('#1e1e1e')""></li>
+		</ul>
+		<ul class="sci">
+		<li><a href="#"><img src="/home/nirrr/Documents/Web Developer/Pepsi landing page/images/facebook.png"></a></li>
+		<li><a href="#"><img src="/home/nirrr/Documents/Web Developer/Pepsi landing page/images/twitter.png"></a></li>
+		<li><a href="#"><img src="/home/nirrr/Documents/Web Developer/Pepsi landing page/images/instagram.png"></a></li>
+		</ul>
+		</section>
+		<script type="text/javascript">
+		function imgSlider(anything)
+		{
+			document.querySelector('.pepsi').src = anything;
+		}
+		function changeBgColor(color)
+		{
+			const sec=document.querySelector('.sec');
+			sec.style.background = color;
+		}
+		</script>
+		</body>
+		</html>
